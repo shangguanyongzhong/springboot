@@ -7,6 +7,7 @@ import org.apache.ibatis.annotations.Select;
 import org.springframework.stereotype.Component;
 
 /**
+ * sqlBuild
  * Created by sg on 2017/3/15.
  */
 
