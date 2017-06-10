@@ -1,6 +1,9 @@
 package com.aliyun.entity;
 
+import org.apache.ibatis.jdbc.SQL;
+
 import java.util.Date;
+import java.util.Map;
 
 /**
  * Created by sg on 2017/3/15.
@@ -51,4 +54,22 @@ public class User {
     public void setAddress(String address) {
         this.address = address;
     }
+
+    public String test(Map<String,Object> param){
+
+        return new SQL(){{
+
+            SELECT("name");
+            FROM("student");
+            if(param.get("name")!=null){
+                WHERE("");
+            }
+            WHERE("");
+
+
+        }}.toString();
+    }
+
+
+
 }
